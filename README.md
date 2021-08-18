@@ -2,6 +2,6 @@
 
 ![infoo_v2](https://user-images.githubusercontent.com/72420125/129972678-227b2001-3306-4eb4-b222-5f20bf0421ab.gif)
 
-View app [here](https://appetize.io/app/w7mbgd0hhuwxhgru0mg7j9xbac)
+
 
 
