@@ -17,7 +17,6 @@ class HomePage extends StatelessWidget {
         title: Text("Registration"),
         elevation: 0.0,
       ),
-      // TODO: Build user input form
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16.0),

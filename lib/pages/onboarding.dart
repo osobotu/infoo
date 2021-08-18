@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:infoo/constants.dart';
 import 'package:infoo/pages/home.dart';
+import 'package:infoo/utils/spacer.dart';
 import 'package:infoo/widgets/button_widget.dart';
 
 import 'package:introduction_screen/introduction_screen.dart';
@@ -16,6 +17,8 @@ class OnboardingPage extends StatelessWidget {
         PageViewModel(
           title: "HNG Internship 8",
           body: 'A fast paced and challenging learning experience! ',
+          footer:
+              kBuildLink(link: 'https://hotels.ng/', text: 'Visit Hotels.ng'),
           image: _buildImage('assets/hng.png'),
           decoration: _getPageDecoration(),
         ),
@@ -24,16 +27,24 @@ class OnboardingPage extends StatelessWidget {
           body: 'Empowering young African tech talents',
           image: _buildImage('assets/i4g_logo.png'),
           decoration: _getPageDecoration(),
+          footer:
+              kBuildLink(link: 'https://ingressive.org/', text: 'Visit I4g'),
         ),
         PageViewModel(
-          title: "",
+          title: '',
           body: 'Learn, Build, Grow!',
           image: _buildImage('assets/zuri.png'),
-          footer: ButtonWidget(
-            text: 'Enroll Now',
-            onPressed: () {
-              _goToHome(context);
-            },
+          footer: Column(
+            children: [
+              ButtonWidget(
+                text: 'Enroll Now',
+                onPressed: () {
+                  _goToHome(context);
+                },
+              ),
+              YSpacer(y: 10),
+              kBuildLink(link: 'https://zuri.team/', text: 'Visit Zuri')
+            ],
           ),
           decoration: _getPageDecoration(),
         ),
@@ -82,12 +93,13 @@ Widget _buildImage(String path) {
 
 DotsDecorator _getDotsDecorator() {
   return DotsDecorator(
-      color: Colors.red,
-      size: Size(10, 10),
-      activeSize: Size(20, 10),
-      activeShape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(24),
-      ));
+    color: Colors.red,
+    size: Size(10, 10),
+    activeSize: Size(20, 10),
+    activeShape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(24),
+    ),
+  );
 }
 
 PageDecoration _getPageDecoration() {
