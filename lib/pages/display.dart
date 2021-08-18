@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:infoo/models/user_details.dart';
 import 'package:infoo/utils/spacer.dart';
-import 'package:infoo/widgets/button_widget.dart';
 
 class DisplayPage extends StatelessWidget {
   const DisplayPage({Key? key}) : super(key: key);

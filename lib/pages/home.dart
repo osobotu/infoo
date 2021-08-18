@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:infoo/constants.dart';
-import 'package:infoo/pages/onboarding.dart';
+
 import 'package:infoo/utils/spacer.dart';
-import 'package:infoo/widgets/button_widget.dart';
+
 import 'package:infoo/widgets/form_widget.dart';
 
 class HomePage extends StatelessWidget {
